@@ -1,0 +1,140 @@
+%!TeX program = pdflatex
+% Russian CV for Legal Audience - One Page
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+
+% Имя
+\newcommand{\myname}{Алишер Джузгенбаев}
+
+% Шрифты
+\usepackage{libertine}
+
+% Определение шрифта для заголовка
+\newcommand{\namefont}[1]{{\normalfont\bfseries\Large{#1}}}
+
+% Настройка заголовков секций
+\titleformat{\section}
+  {\normalfont\bfseries}
+  {}
+  {0em}
+  {}
+  [\titlerule]
+  
+\titlespacing*{\section}
+  {0pt}{10pt}{5pt}
+
+% Настройка полей для одной страницы
+\geometry{
+    a4paper,
+    left=1.5cm,
+    right=1.5cm,
+    top=1.5cm,
+    bottom=1.5cm
+}
+
+% Убираем отступы параграфов
+\setlength\parindent{0em}
+
+% Компактные списки
+\setlist[itemize]{leftmargin=1em, topsep=0pt, itemsep=1pt, parsep=0pt}
+
+% Настройка гиперссылок
+\hypersetup{
+    colorlinks  = true,
+    urlcolor    = blue,
+    linkcolor   = black,
+    pdfauthor   = {\myname},
+    pdftitle    = {\myname: Резюме},
+}
+
+\begin{document}
+\pagestyle{empty} % Убираем номера страниц
+
+% Заголовок
+\begin{center}
+    \namefont{\myname}
+    
+    \vspace{0.3em}
+    Northwestern University • Chicago, IL, USA \\
+    \href{mailto:juzgenbayev@u.northwestern.edu}{juzgenbayev@u.northwestern.edu} • 
+    +7 (747) 651-5632 • 
+    \href{https://alisher.site}{alisher.site}
+\end{center}
+
+\section{Образование}
+
+\begin{itemize}
+    \item[] \textbf{J.D.} (Доктор права), Northwestern Pritzker School of Law, 2027 (ожидается)
+    \item[] \textbf{Ph.D.} (Политология), Northwestern University, 2027 (ожидается)
+    \item[] \textbf{M.A.} (Политология), Northwestern University, 2022
+    \item[] \textbf{B.A.} (Политология и международные отношения), \textit{summa cum laude}, Назарбаев Университет, 2020
+\end{itemize}
+
+\section{Юридический опыт}
+
+\begin{itemize}
+    \item[] \textbf{Skadden, Arps, Slate, Meagher \& Flom LLP} — Летний ассоциат (2025)
+    \item[] \textbf{Legal Aid Chicago} — Стажёр, группа защиты прав потребителей (2024)
+    \item[] \textbf{Northwestern University Law Review} — Старший редактор по эмпирическим исследованиям, Том 119 (2023--24)
+    \item[] \textbf{Федеральный окружной суд США (Северный округ Иллинойса)} — Судебный стажёр (2023)
+\end{itemize}
+
+\section{Научные публикации}
+
+\textbf{Статьи в рецензируемых журналах:}
+\begin{itemize}
+    \item Трошев А., Джузгенбаев А. <<Расходящиеся траектории постсоветских конституционных судов>> [EN]. \textit{Constitutional Studies}, 11(1), 2025, pp. 271--315.
+    \item Джузгенбаев А. <<Фрейминг судебной власти: эффекты партийных, процедурных и популистских фреймов на восприятие высших судов в Чехии>> [EN]. \textit{Journal of Law and Courts}, 13(1), 2025, pp. 97--121.
+\end{itemize}
+
+\textbf{Главы в книгах и статьи в юридических обозрениях:}
+\begin{itemize}
+    \item Джузгенбаев А. <<Путь в никуда: Ограничение права на иск и административная дискреция как угроза защите прав потребителей>> [EN]. \textit{Northwestern University Law Review}, 120, 2026 (в печати).
+    \item Трошев А., Джузгенбаев А. <<Инструментализация конституционного права в Центральной Азии>> [EN] в \textit{Research Handbook on Law and Political Systems}. Edward Elgar, 2023, pp. 139--168.
+\end{itemize}
+
+\section{Области исследований}
+
+\textbf{Диссертация:} <<Административная юстиция и правосознание в постсоветских странах>> [EN] \\
+\textbf{Специализация:} Сравнительное конституционное право • Судебные системы постсоветского пространства • Эмпирические правовые исследования • Административное право
+
+\section{Гранты и награды}
+
+\begin{itemize}
+    \item Президентская стипендия, Northwestern University (2025)
+    \item Грант для международных диссертационных исследований, Институт Баффетта (2025)
+    \item Грант для аспирантских исследований, Northwestern University (2023)
+    \item Полуфиналист, Чемпионат Европы по дебатам среди университетов (2020)
+    \item Программа для иностранных студентов, Университет Висконсин-Мэдисон (2019)
+\end{itemize}
+
+\section{Конференции и доклады}
+
+\begin{itemize}
+    \item <<Административная юстиция и правосознание в Казахстане>> [EN] — Ежегодная конвенция Law \& Society, Чикаго (2025)
+    \item <<Влияние громких дел на общественное восприятие домашнего насилия: динамика идентичности в Казахстане>> [EN] — Семинар по моделям и экспериментам, Университет Висконсин-Мэдисон (2024)
+    \item <<Популистские фреймы и легитимность судебной власти: экспериментальное исследование в Чешской Республике>> [EN] — Генеральная конференция ECPR, Прага (2024)
+    \item <<Клиентелизм, конституционные суды и высокая политика в Центральной Азии>> [EN] — Конвенция ASEEES, Чикаго (2022)
+\end{itemize}
+
+\section{Преподавание}
+
+\textbf{Ассистент преподавателя:} Гражданский процесс • Вещное право • Сравнительная политика • Международное право • Право, политика и общество • Международные отношения (2021--2025)
+
+\section{Профессиональные навыки}
+
+\begin{itemize}
+    \item[] \textbf{Языки:} Русский (родной) • Английский (свободно) • Украинский (чтение) • Казахский (средний)
+    \item[] \textbf{Технические навыки:} R, Python, \LaTeX, Qualtrics, эмпирический анализ данных
+    \item[] \textbf{Членство:} Law \& Society Association • Association for Slavic, East European, and Eurasian Studies • American Political Science Association
+\end{itemize}
+
+\end{document}
