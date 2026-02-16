@@ -1,0 +1,142 @@
+%!TeX program = pdflatex
+
+\documentclass[11pt,letterpaper]{report}
+
+\usepackage[T1]{fontenc}
+\usepackage[strict,autostyle]{csquotes}
+\usepackage[USenglish]{babel}
+\usepackage{microtype}
+\usepackage{tabto}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{setspace}
+
+\newcommand{\myname}{Alisher Juzgenbayev}
+
+\usepackage{ebgaramond}
+\usepackage{tgheros}
+
+\newcommand{\listtabwidth}{1.7cm}
+
+\newcommand{\namefont}[1]{{\normalfont\bfseries\Huge{#1}}}
+
+\SetTracking{encoding=*, family=\sfdefault}{30}
+\titleformat{\section}{\lsstyle\sffamily\small\bfseries\uppercase}{}{}{}{}
+\titlespacing{\section}{0pt}{12pt plus 2pt minus 2pt}{4pt plus 1pt minus 1pt}
+
+\titleformat{\subsection}{\lsstyle\sffamily\footnotesize\bfseries}{}{}{}{}
+\titlespacing{\subsection}{0pt}{8pt plus 2pt minus 2pt}{2pt plus 1pt minus 1pt}
+
+% Tighter margins for 1-page fit
+\geometry{body={6.5in, 9.5in},
+    left=1.0in,
+    top=0.75in}
+
+\setlength\parindent{0em}
+
+\setstretch{0.85}
+
+\newcommand{\listitemspace}{0.15em}
+
+\renewenvironment{itemize}
+{\begin{list}{}{\setlength{\leftmargin}{0em}
+                \setlength{\parskip}{0em}
+                \setlength{\itemsep}{\listitemspace}
+                \setlength{\parsep}{\listitemspace}}}
+{\end{list}}
+
+\TabPositions{\listtabwidth}
+\newlist{tablist}{description}{3}
+\setlist[tablist]{leftmargin=\listtabwidth,
+    labelindent=0em,
+    topsep=0em,
+    partopsep=0em,
+    itemsep=\listitemspace,
+    parsep=\listitemspace,
+    font=\normalfont}
+
+\hypersetup{
+    colorlinks  = true,
+    urlcolor    = black,
+    citecolor   = black,
+    linkcolor   = black,
+    pdfauthor   = {\myname},
+    pdftitle    = {\myname: Curriculum Vitae},
+    pdfsubject  = {Curriculum Vitae},
+    pdfpagemode = UseNone
+}
+
+\begin{document}
+    \raggedright{}
+
+    \namefont{\myname}
+
+    \vspace{0.5em}
+    \begin{minipage}[t]{0.700\textwidth}
+        Department of Political Science \\
+        Pritzker School of Law \\
+        Northwestern University
+    \end{minipage}
+    \begin{minipage}[t]{0.295\textwidth}
+        \flushright{}
+        \href{mailto:juzgenbayev@u.northwestern.edu}{juzgenbayev@u.northwestern.edu} \\
+        \href{https://alisher.site}{alisher.site}
+    \end{minipage}
+
+
+    \section*{Education}
+
+    \begin{tablist}
+
+        \item[Ph.D.] \tab{}Political Science, Northwestern University, 2020--2027 (expected)
+        \item[J.D.] \tab{}Pritzker School of Law, Northwestern University, 2022--2027 (expected)
+        \item[M.A.]  \tab{}Political Science, Northwestern University, 2022
+        \item[B.A.]  \tab{}Political Science and International Relations, \textit{summa cum laude}, Nazarbayev University, 2016--2020
+
+    \end{tablist}
+
+
+    \section*{Publications}
+
+   \subsection*{Journal Articles}
+
+   \begin{tablist}
+
+        \item[2025] \tab{}Trochev, A. \& Juzgenbayev, A. \enquote{Diverging Trajectories of Post-Soviet Constitutional Courts.} \textit{Constitutional Studies} 11(1): 271--315.
+        \item[2025] \tab{}Juzgenbayev, A. \enquote{Framing the Judiciary: Effects of Partisan, Procedural, and Populist Frames on Apex Court Perceptions in Czechia.} \textit{Journal of Law and Courts} 13(1): 97--121.
+
+    \end{tablist}
+
+
+    \subsection*{Book Chapters}
+
+    \begin{tablist}
+
+        \item[2023] \tab{}Trochev, A. \& Juzgenbayev, A. \enquote{Instrumentalization of Constitutional Law in Central Asia.} In R. M. Howard, K. A. Randazzo, \& R. A. Reid (Eds.), \textit{Research Handbook on Law and Political Systems} (pp. 139--168). Edward Elgar.
+
+    \end{tablist}
+
+
+    \section*{Presentations}
+
+    \subsection*{Invited Talks}
+
+    \begin{tablist}
+        \item[2025] \tab{}\enquote{State of the Field Issue: Authors Panel.} Constitutional Studies. Sep.
+        \item[2025] \tab{}\enquote{Organization of Legal Profession in the United States.} Bar Association of Astana, Kazakhstan. Sep.
+        \item[2025] \tab{}\enquote{Framing the Judiciary.} Judicial Studies Institute, Masaryk University, Czech Republic. Jan.
+        \item[2024] \tab{}\enquote{In-group-motivated evaluations of domestic violence.} Models, Experiments, and Data Workshop, University of Wisconsin-Madison. Sep.
+    \end{tablist}
+
+    \subsection*{Conference Papers}
+
+    \begin{tablist}
+        \item[2025] \tab{}\enquote{Administrative Justice and Regime Support in Kazakhstan.} Law \& Society Annual Convention. Chicago, IL.
+        \item[2025] \tab{}\enquote{Impact of High-Profile Cases on Public Perception of Domestic Violence.} MPSA Annual Conference. Chicago, IL.
+        \item[2024] \tab{}\enquote{Populist Frames and Judicial Legitimacy.} ECPR General Conference. Prague, Czechia.
+        \item[2022] \tab{}\enquote{Clientelism, Constitutional Courts, and High Politics in Central Asia.} ASEEES Convention. Chicago, IL.
+    \end{tablist}
+
+\end{document}
